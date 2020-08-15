@@ -1,14 +1,42 @@
 /*
-Theme Name: Revamped Website as Imported Theme
-Theme URI: Imported_Revamp
+Theme Name: Imported Theme Rev
+Theme URI: ThemeDevelop
 Description: Using the instructions found at https://www.elegantthemes.com/blog/tips-tricks/converting-html-sites-to-wordpress-sites, the styles from the website revamp Dorothy did are included in this theme.
 Version: 1.0
-Author: Michael
-Author URI: Michael
+Author: Taiko Kai
+Author URI: TaikoKai
 */
 
 /* Import font */
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* Wordpress normalization style */
+
+article {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.entry-title {
+	display: none;
+}
+
+.entry-content {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.entry-content > p {
+	display: none;
+}
+
+/* TODO: Remove after development */
+/* Thunk link fix */
+._dev-thunkLink {
+	margin-top: 100px;
+}
 
 /*Booking Page Styling Starts here*/
 input, textarea {
